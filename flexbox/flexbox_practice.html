@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex Container Practice</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: beige;
+      }
+      .container {
+        font: 24px Helvetica, Arial, sans-serif;
+        color: papayawhip;
+        background-color: cornflowerblue;
+        height: 150px;
+        border: 5px solid #ffcc5c;
+        text-align: center;
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+      }
+      .container > div {
+        align-items: center;
+        height: 100%;
+        flex: 1;
+      }
+      .container > .search {
+        background-color: lightcoral;
+/*        flex: 1;*/
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="home">Home</div>
+      <div class="search">Search</div>
+      <div class="logout">Logout</div>
+    </nav>
+  </body>
+</html>
